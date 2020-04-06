@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought Control</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="redpage" onload="populateList(negitems, list)">
+  <header>
+    <p>
+      Thought Control
+    </p>
+  </header>
+  <main>
+    <div>
+      <form class="thoughtinput" onsubmit="newRed(event, this)">
+        <input class="red-in" name="redthought" type="text" placeholder="Input negative thought">
+        <input class="red-in" type="submit" value="Submit" >
+      </form>
+    </div>
+    <div class="button">
+      <button id="home" onclick="window.location.href = 'index.html';">Home</button>
+      <button id="blue" onclick="window.location.href = 'blue.html';">Positive Thoughts</button>
+    </div>
+    <h3 id="thought-num">
+      <span id="tnum"></span>
+    </h3>
+    <div id="thought-box">
+      <div id="bomb">
+        <ul id="thoughts"></ul>
+      </div>
+    </div>
+    <div id="myModal" class="red-modal">
+      <ul id="modal-list"></ul>
+    </div>
+  </main>
+</body>
+<script src="app.js"></script>
+</html>

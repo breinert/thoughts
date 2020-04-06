@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought Control</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="bluepage" onload="populateList(items, list)">
+  <header>
+    <p>
+      Thought Control
+    </p>
+  </header>
+  <main>
+    <div>
+      <form class="thoughtinput" onsubmit="newBlue(event, this)">
+        <input class="blue-in" type="text" name="bluethought" placeholder="Input positve thought">
+        <input class="blue-in" type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="button">
+      <button id="home" onclick="window.location.href = 'index.html';">Home</button>
+      <button id="red" onclick="window.location.href = 'red.html';">Negative Thoughts</button>
+    </div>
+    <div id="positive-count">
+      <h3 id="thought-num">
+        <span id="tnum"></span>
+      </h3>
+    </div>
+    <div id="thought-box">
+      <ul id="thoughts">
+        <li>
+          Life is Great!
+        </li>
+      </ul>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Do you want to remove this thought?</p>
+        <button class="del" onclick="delBlue()">Yes</button>
+        <button class="del" onclick="document.getElementById('myModal').style.display='none'">No</button>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="app.js"></script>
+</html>

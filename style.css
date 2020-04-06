@@ -1,0 +1,229 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgba(255, 127, 80, 0.904);
+  margin: auto;
+  width: fit-content;
+  max-width: 900px;
+  text-align: center;
+  justify-content: center;
+}
+
+header {
+  font-size: min(4vw, 30px);
+  text-align: center;
+  background-color: aquamarine;
+  margin: auto;
+  padding: 0 10px;
+  border-radius: 10vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+#main-card {
+  background-color: coral;
+  font-size: min(5vw, 35px);
+  border-radius: 5vw;
+  margin: 2vw;
+  padding: 1vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#bluepage {
+  background-color: blue;
+}
+
+#redpage {
+  background-color: red;
+}
+
+.button {
+  text-align: center;
+  margin: 1em;
+}
+
+button {
+  border-radius: 2em;
+  background-color: aquamarine;
+  transition-duration: 0.4s;
+  font-size: min(2.5vw, 25px);
+  padding: 0.5em;
+  margin: 1vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+#blue {
+  background-color: blue;
+  color: white;
+}
+
+#red {
+  background-color: red;
+  color: white;
+}
+
+#home {
+  background-color: coral;
+  color: black;
+}
+
+#thought-count {
+  background-color: coral;
+  width: fit-content;
+  margin: auto;
+  font-size: min(3vw, 25px);
+  font-weight: bold;
+  padding: 1vw;
+  border-radius: 5vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.blue-in {
+  font-size: min(4vw, 30px);
+  background-color: skyblue;
+  color: black;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 10vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.red-in {
+  font-size: min(4vw, 30px);
+  background-color: pink;
+  color: black;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 10vw;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+#thought-num {
+  font-size: min(3vw, 25px);
+}
+
+#positive-count {
+  color: coral;
+}
+
+ul,li {
+  list-style: none;
+}
+
+ul li {
+  margin: 30px;
+}
+
+ul li .thoughts {
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 7px;
+  display: block;
+  color: #000;
+  background: #ffc;
+  height: min(7vw, 70px);
+  width: min(7vw, 70px);
+  padding: 2px;
+  line-height: 10px;
+  transition: transform .15s linear;
+  transform: rotate(-6deg);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+ul li .thoughts {
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+ul li:nth-child(even) .thoughts {
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background:#cfc
+}
+
+ul li:nth-child(3n) .thoughts {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -10px;
+  background:#ccf
+}
+
+ul li:nth-child(5n) .thoughts {
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+ul {
+  overflow: hidden;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li .thoughts:hover,ul li .thoughts:focus {
+  transform: scale(2.15);
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+}
+
+#modal-list .thoughts {
+  transform: scale(3);
+  position: relative;
+  margin: 50% auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.red-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content {
+  color: white;
+  font-size: 4vw;
+  background-color: blue;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 2em;
+  width: 40%;
+}
+
+#reset {
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: left;
+  margin: auto;
+}
+
+#ra {
+  font-size: 1vw;
+  background-color: blueviolet;
+  color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought Control</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="totalThoughts()">
+  <header>
+    <p>
+      Thought Control
+    </p>
+  </header>
+  <main>
+    <div id="main-card">
+      <p>
+        <strong>Master Your Thoughts</strong><br>
+        Post Your Positive Thoughts<br>
+        Destroy Your Negative Thoughts
+      </p>
+    </div>
+    <div class="button">
+      <button id="blue" onclick="window.location.href = 'blue.html';">Positive Thoughts</button>
+      <button id="red" onclick="window.location.href = 'red.html';">Negative Thoughts</button>
+    </div>
+    <div id="thought-count">
+      <p>
+        You Have Had:<br>
+        <span id="pnum"></span><br>
+        &<br>
+        <span id="nnum"></span>
+      </p>
+    </div>
+  </main>
+  <div id="reset">
+    <button id="ra" onclick="blueOpts(event, this)">Reset App</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to reset the app?</p>
+      <!-- <span class="close" onclick="">&times;</span> -->
+      <button class="del" onclick="resetApp()">Yes</button>
+      <button class="del" onclick="document.getElementById('myModal').style.display='none'">No</button>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
